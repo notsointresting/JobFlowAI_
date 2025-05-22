@@ -1,0 +1,198 @@
+/* Modern theme with dark mode support */
+:root {
+    --primary-color: #FF4B4B;
+    --background-color: #FFFFFF;
+    --secondary-background: #F0F2F6;
+    --text-color: #262730;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0,0,0,0.05);
+}
+
+[data-theme="dark"] {
+    --primary-color: #FF6B6B;
+    --background-color: #1E1E1E;
+    --secondary-background: #2D2D2D;
+    --text-color: #E0E0E0;
+    --border-color: #404040;
+    --shadow-color: rgba(0,0,0,0.2);
+}
+
+.main {
+    padding: 2rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.brand-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease;
+}
+
+.author-info {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.welcome-text {
+    font-size: 18px;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease;
+}
+
+.results-window {
+    height: 600px;
+    overflow-y: auto;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px var(--shadow-color);
+    margin: 20px 0;
+    animation: fadeIn 1s ease;
+}
+
+.results-window h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    border: 1px solid var(--border-color);
+    animation: slideUp 0.5s ease;
+}
+
+.sidebar-content {
+    padding: 15px;
+    background-color: var(--background-color);
+}
+
+.stButton button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Loading animation */
+.loading-spinner {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--secondary-background);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Dark mode toggle */
+.dark-mode-toggle {
+    background: var(--secondary-background);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.05);
+}
+
+/* Form styling */
+.stTextInput input {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.stTextInput input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(255, 75, 75, 0.2);
+}
+
+/* Success message styling */
+.success-message {
+    color: #28a745;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    background-color: rgba(40, 167, 69, 0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+/* File uploader styling */
+.uploadedFile {
+    background-color: var(--secondary-background);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Progress bar styling */
+.stProgress > div > div {
+    background-color: var(--primary-color);
+}
+
+/* Custom container for resume upload */
+.resume-upload-container {
+    background-color: var(--secondary-background);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 2px dashed #dee2e6;
+}

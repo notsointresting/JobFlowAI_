@@ -1,0 +1,6 @@
+Flask
+python-dotenv
+crewai
+langchain-openai
+crewai[tools]
+gevent
