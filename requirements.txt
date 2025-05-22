@@ -1,6 +1,5 @@
-Flask
-python-dotenv
-crewai
-langchain-openai
 crewai[tools]
+langchain-openai
+python-dotenv
+streamlit
 gevent
