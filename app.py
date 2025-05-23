@@ -39,7 +39,6 @@ with st.sidebar:
 
     # Model selection
     model_options = [
-        "gemini/gemini-1.5-pro",
         "gemini/gemini-2.0-flash-lite"
     ]
     selected_model = st.selectbox("Select Model", model_options)
