@@ -5,6 +5,10 @@ Link---> https://jobflowai.streamlit.app/
 
 Welcome to JobFlowAI! This project is designed to be your intelligent assistant in the often challenging journey of job hunting. JobFlowAI helps you streamline your job search, optimize your resumes, and prepare for interviews using our suite of AI-powered tools.
 
+
+## Features TBD
+- Job Alert Automation
+
 ## ✨ Key Features
 
 -   **Resume Analysis & ATS Optimization:** Upload your resume and get an ATS-friendly score, along with suggestions to improve its compatibility with specific job descriptions. This helps your resume get noticed by recruiters.
