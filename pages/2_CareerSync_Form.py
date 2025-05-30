@@ -1,17 +1,18 @@
 import streamlit as st
 import snowflake.connector
 import json
+import os
 
 # Connect to Snowflake using secrets
 def get_snowflake_connection():
-    sf = st.secrets["snowflake"]
+    
     conn = snowflake.connector.connect(
-        user=sf["user"],
-        password=sf["password"],
-        account=sf["account"],
-        warehouse=sf["warehouse"],
-        database=sf["database"],
-        schema=sf["schema"]
+        user=os.environ['user'],
+        password=os.environ["password"],
+        account=os.environ["account"],
+        warehouse=os.environ["warehouse"],
+        database=os.environ["database"],
+        schema=os.environ["schema"]
     )
     return conn
 
