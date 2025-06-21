@@ -1,0 +1,26 @@
+{
+  "name": "modernmobileapp",
+  "version": "1.0.0",
+  "main": "expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^7.1.13",
+    "@react-navigation/stack": "^7.3.6",
+    "expo": "~51.0.28",
+    "expo-linear-gradient": "^14.1.5",
+    "expo-status-bar": "~1.12.1",
+    "react": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-safe-area-context": "^5.4.1",
+    "react-native-screens": "^4.11.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
+}
