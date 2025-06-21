@@ -24,7 +24,8 @@
     "expo-linear-gradient": "~12.7.2",
     "expo-blur": "~12.9.2",
     "react-native-svg": "14.1.0",
-    "@expo/vector-icons": "^14.0.0"
+    "@expo/vector-icons": "^14.0.0",
+    "expo-router": "~3.4.8"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
